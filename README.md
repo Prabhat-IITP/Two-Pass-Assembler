@@ -1,3 +1,4 @@
+"""
 # Assembler and Emulator Project
 
 This project includes an **assembler** and an **emulator** for developing, testing, and executing assembly programs. It supports assembling instructions, managing labels and mnemonics, and running the assembled code with options for memory inspection and tracing.
@@ -48,23 +49,17 @@ The emulator provides a virtual environment to execute the assembled code, with 
 
 ---
 
-## Testing
-
-- **Assembler Testing**: The assembler has been tested with two example programs, validating functionality and error-checking capabilities.
-
----
-
 ## Usage
 
 ### 1. Assembling a Program
 
-To assemble a test program, pass it to the assembler. The assembler detects label errors and outputs a listing file.  
+To assemble a test program, pass it to the assembler. The assembler detects label errors and outputs a listing file.
 
 Example:
-```bash
-assembler example_program.asm
+$ assembler example_program.asm
 
 ---
+
 ### 2. Running the Emulator
 
 The emulator can load the assembled object file and provides options to inspect memory and trace execution:
@@ -72,6 +67,27 @@ The emulator can load the assembled object file and provides options to inspect 
 - **Memory Dump Before/After Execution**:  
   Use the `-before` or `-after` options to dump memory contents before or after execution.
 
-  ```bash
-  emulator -before example_object.obj
-  emulator -after example_object.obj
+$ emulator -before example_object.obj
+$ emulator -after example_object.obj
+
+- **Execution Trace**:  
+  Use the `-trace` option to print detailed results for each executed instruction, showing the program's flow and modifications to memory.
+
+$ emulator -trace example_object.obj
+
+---
+
+## Testing
+
+The assembler has been tested using two example programs to confirm its functionality and error-detection capabilities. These tests verify the assembler’s handling of labels, mnemonics, and the SET instruction.
+
+---
+
+## License
+
+This project is open-source and is available for educational and development purposes. Contributions and feedback are welcome.
+
+---
+
+This README file provides a summary of the program's structure, features, and usage instructions. For further details, please refer to the inline documentation within the source code.
+"""
