@@ -1,4 +1,3 @@
-"""
 # Assembler and Emulator Project
 
 This project includes an **assembler** and an **emulator** for developing, testing, and executing assembly programs. It supports assembling instructions, managing labels and mnemonics, and running the assembled code with options for memory inspection and tracing.
@@ -82,12 +81,3 @@ $ emulator -trace example_object.obj
 The assembler has been tested using two example programs to confirm its functionality and error-detection capabilities. These tests verify the assembler’s handling of labels, mnemonics, and the SET instruction.
 
 ---
-
-## License
-
-This project is open-source and is available for educational and development purposes. Contributions and feedback are welcome.
-
----
-
-This README file provides a summary of the program's structure, features, and usage instructions. For further details, please refer to the inline documentation within the source code.
-"""
