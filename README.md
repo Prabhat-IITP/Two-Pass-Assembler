@@ -63,3 +63,15 @@ To assemble a test program, pass it to the assembler. The assembler detects labe
 Example:
 ```bash
 assembler example_program.asm
+
+---
+### 2. Running the Emulator
+
+The emulator can load the assembled object file and provides options to inspect memory and trace execution:
+
+- **Memory Dump Before/After Execution**:  
+  Use the `-before` or `-after` options to dump memory contents before or after execution.
+
+  ```bash
+  emulator -before example_object.obj
+  emulator -after example_object.obj
