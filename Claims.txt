@@ -1,0 +1,37 @@
+TITLE: Claims																																
+AUTHOR: Prabhat Kumar Malviya
+ROLL NO.: 2101CS58
+Declaration of Authorship
+Files:
+*All the files I submitted, asm.cpp and emu.cpp and claims.txt, have my name and student id at the start, along with a declaration of authorship.
+
+The evidence for Assembler including the output files from the two test examples have also been uploaded.
+
+*Both of my cpp programs did not show any errors and warnings when I compiled it with g++ file.cpp
+
+*Two programs are compilable with g++ asm.cpp -o asm and g++ emu.cpp -o emu.
+
+Program format and structure:
+1. The assembler:
+
+	* with two data structures to store respectively labels and mnemonic table with expected operands.
+	* uses a single routine for both passes.
+	* detects label erros.
+	* consistent and sensible formatting with sensible program structure. 
+	* sensible variable, function & type names with explanatory comments.
+	* advanced listing file.
+	* assembles test programs.
+	* can implements and demonstrates the instruction SET.
+
+2. The emulator :
+
+    * with two data structures to store respectively memory, mnemonic table with expected operands
+    * loads object file, 
+    * by giving the instructions like "-befor/-after" , the program can produce memory dump before/after execution.
+    * by giving the instruction like "-trace", the program prints the result of program executed.
+    * detects errant programs.
+
+
+Testing:
+
+1. The assembler: I have tested two examples.
